@@ -1,0 +1,109 @@
+{
+  "basic_info": {
+    "description_header": "Hi, I'm",
+    "description": " I'm Kavya \u2014 a Senior Full\u2011Stack Java Developer with 8+ years building cloud\u2011native, secure, and scalable systems across banking, retail, rewards, and order management. I specialize in Java, Spring Boot, Microservices, REST APIs, Angular, and AWS. I deliver performant APIs, event\u2011driven architectures with Kafka, and automated CI/CD.",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience"
+    }
+  },
+  "projects": [],
+  "experience": [
+    {
+      "company": "JPMorgan Chase & Co \u2014 Plano, TX",
+      "title": "Sr. Full\u2011Stack Developer",
+      "years": "08/2023 \u2013 Present",
+      "mainTech": [
+        "Java",
+        "Spring Boot",
+        "AWS (Lambda, API GW, DynamoDB, S3)"
+      ],
+      "technologies": [
+        "Microservices",
+        "Kafka",
+        "Angular",
+        "Docker",
+        "Kubernetes (EKS)",
+        "Jenkins",
+        "CloudWatch",
+        "ELK",
+        "OAuth2/JWT"
+      ],
+      "details": [
+        "Designed microservices for rewards redemption using AWS services and REST APIs.",
+        "Integrated third\u2011party travel providers; enabled async flows with Kafka.",
+        "Built responsive Angular front\u2011end and CI/CD with Jenkins; zero\u2011downtime deployments.",
+        "Implemented security & compliance (PCI DSS, GDPR) and proactive monitoring."
+      ]
+    },
+    {
+      "company": "Thomson Reuters \u2014 Dallas, TX",
+      "title": "Full\u2011Stack Java Developer",
+      "years": "09/2021 \u2013 07/2023",
+      "mainTech": [
+        "Java 17",
+        "Spring Boot",
+        "Oracle 11g"
+      ],
+      "technologies": [
+        "React",
+        "Kafka",
+        "ActiveMQ",
+        "AWS (EC2, S3, API GW, Lambda)",
+        "Jenkins",
+        "ELK"
+      ],
+      "details": [
+        "Built backend services and REST APIs for Online State Apportionment (tax).",
+        "Implemented state\u2011specific rules and rollups; optimized complex SQL for scale.",
+        "Automated report generation and integrated with ERP/compliance platforms.",
+        "Deployed to AWS; added monitoring/logging for proactive alerting."
+      ]
+    },
+    {
+      "company": "Adidas \u2014 Portland, OR",
+      "title": "Java Developer",
+      "years": "10/2019 \u2013 08/2021",
+      "mainTech": [
+        "Spring MVC",
+        "Hibernate",
+        "REST"
+      ],
+      "technologies": [
+        "ActiveMQ",
+        "Oracle 11g",
+        "AWS",
+        "Jenkins",
+        "GitLab"
+      ],
+      "details": [
+        "Developed secure REST APIs and modular service layers for enterprise modules.",
+        "Optimized SQL and ensured transactional integrity; delivered dashboards.",
+        "Set up CI/CD pipelines and cloud deployments; maintained 99.9% uptime."
+      ]
+    },
+    {
+      "company": "Citrix Systems \u2014 Hyderabad, India",
+      "title": "Junior Java Developer",
+      "years": "07/2017 \u2013 09/2019",
+      "mainTech": [
+        "Spring Boot",
+        "Oracle 11g"
+      ],
+      "technologies": [
+        "Kafka",
+        "Cassandra",
+        "WebLogic",
+        "JUnit",
+        "Mockito"
+      ],
+      "details": [
+        "Integrated marketplace orders into OMS; added payment workflows and refunds.",
+        "Built APIs for order validation and reconciliation; improved performance with caching.",
+        "Automated EOD reconciliation; strengthened logging and retry mechanisms."
+      ]
+    }
+  ]
+}

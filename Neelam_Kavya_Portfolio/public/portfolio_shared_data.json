@@ -1,0 +1,85 @@
+{
+  "basic_info": {
+    "name": "Kavya Neelam",
+    "titles": [
+      "Software Developer"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "#",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "www.linkedin.com/in/kavya-neelam",
+        "class": "fab fa-LinkedIn"
+      }
+    ],
+    "image": "Photo.jpeg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "Java",
+        "class": "devicon-java-plain",
+        "level": "95"
+      },
+      {
+        "name": "Spring Boot",
+        "class": "devicon-spring-plain",
+        "level": "90"
+      },
+      {
+        "name": "REST APIs",
+        "class": "devicon-java-plain",
+        "level": "90"
+      },
+      {
+        "name": "Angular",
+        "class": "devicon-angularjs-plain",
+        "level": "80"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-original",
+        "level": "75"
+      },
+      {
+        "name": "AWS",
+        "class": "devicon-amazonwebservices-original",
+        "level": "85"
+      },
+      {
+        "name": "Docker",
+        "class": "devicon-docker-plain",
+        "level": "85"
+      },
+      {
+        "name": "Kubernetes",
+        "class": "devicon-kubernetes-plain",
+        "level": "80"
+      },
+      {
+        "name": "Kafka",
+        "class": "devicon-apachekafka-original",
+        "level": "75"
+      },
+      {
+        "name": "Oracle",
+        "class": "devicon-oracle-original",
+        "level": "80"
+      },
+      {
+        "name": "MySQL",
+        "class": "devicon-mysql-plain",
+        "level": "75"
+      },
+      {
+        "name": "Git",
+        "class": "devicon-git-plain",
+        "level": "85"
+      }
+    ]
+  }
+}

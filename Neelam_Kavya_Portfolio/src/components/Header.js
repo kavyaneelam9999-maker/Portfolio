@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
-import Logo from "../images/logo.png";
 
 class Header extends Component {
   titles = [];
@@ -31,7 +30,7 @@ class Header extends Component {
         }}
       >
         <img
-          src={Logo}
+          src={'/logo.png'}
           alt="Name Logo"
           style={{
             position: "absolute",
@@ -50,7 +49,7 @@ class Header extends Component {
               <span>
                 <img
                   height="260px"
-                  src={Logo}
+                  src={'/logo.png'}
                   alt="Name Logo"
                   style={{
                     borderRadius: "50%",

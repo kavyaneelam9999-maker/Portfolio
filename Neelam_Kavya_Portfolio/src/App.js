@@ -96,32 +96,35 @@ class App extends Component
     });
   }
 
-  render()
-  {
-    return (
-      <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        {/* <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        /> */}
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-        <Contact />
-      </div>
-    );
+  render() {
+  const { sharedData, resumeData } = this.state;
+
+  // wait until data is present
+  if (!sharedData.basic_info || !resumeData) {
+    return <div style={{padding: 24}}>Loading…</div>;
   }
+
+  return (
+    <div>
+      <Header sharedData={sharedData.basic_info} />
+      <About
+        resumeBasicInfo={resumeData.basic_info}
+        sharedBasicInfo={sharedData.basic_info}
+      />
+      <Experience
+        resumeExperience={resumeData.experience}
+        resumeBasicInfo={resumeData.basic_info}
+      />
+      <Skills
+        sharedSkills={sharedData.skills}
+        resumeBasicInfo={resumeData.basic_info}
+      />
+      <Footer sharedBasicInfo={sharedData.basic_info} />
+      <Contact />
+    </div>
+  );
+}
+
 }
 
 export default App;

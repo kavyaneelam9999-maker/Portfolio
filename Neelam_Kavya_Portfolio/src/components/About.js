@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Icon } from "@iconify/react";
 import csharpIcon from "@iconify/icons-logos/c-sharp";
 import reactIcon from "@iconify/icons-logos/react";
-import htmlIcon from "@iconify/icons-logos/html-5";
-import cssIcon from "@iconify/icons-logos/css-3";
 import jsIcon from "@iconify/icons-logos/javascript";
 import profilepic from '../components/images/Photo.jpeg'
 

@@ -4,7 +4,6 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import data from './portfolio_shared_data.json';
 
 /* GLOBAL VARIABLES */
 

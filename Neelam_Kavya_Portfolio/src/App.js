@@ -59,42 +59,31 @@ class App extends Component
     );
   }
 
-  loadResumeFromPath(path)
-  {
-    console.log(path, "path")
-    $.ajax({
-      url: path,
-      dataType: "json",
-      cache: false,
-      success: function (data)
-      {
-        console.log(data, "data")
-        this.setState({ resumeData: data });
-      }.bind(this),
-      error: function (xhr, status, err)
-      {
-        alert(err);
-      },
-    });
-  }
-
-  loadSharedData()
-  {
-    $.ajax({
-      url: `portfolio_shared_data.json`,
-      dataType: "json",
-      cache: false,
-      success: function (data)
-      {
-        this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
-      }.bind(this),
-      error: function (xhr, status, err)
-      {
-        alert(err);
-      },
-    });
-  }
+ loadResumeFromPath(path) {
+  const base = process.env.PUBLIC_URL || "";
+  $.ajax({
+    url: `${base}/${path}`,          // was: url: path
+    dataType: "json",
+    cache: false,
+    success: data => { this.setState({ resumeData: data }); },
+    error: (xhr, status, err) => { console.error(err); }
+  });
+}
+  loadSharedData() {
+  const base = process.env.PUBLIC_URL || "";
+  $.ajax({
+    url: `${base}/portfolio_shared_data.json`,   // was: `portfolio_shared_data.json`
+    dataType: "json",
+    cache: false,
+    success: data => {
+      this.setState({ sharedData: data }, () => {
+        // only read after setState finishes
+        document.title = `${this.state.sharedData.basic_info?.name || "Portfolio"}`;
+      });
+    },
+    error: (xhr, status, err) => { console.error(err); }
+  });
+}
 
   render() {
   const { sharedData, resumeData } = this.state;

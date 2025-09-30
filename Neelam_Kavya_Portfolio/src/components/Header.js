@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
-import Logo from "../components/images/logo.png";
+import Logo from "../images/logo.png";
 
 class Header extends Component {
   titles = [];
@@ -14,10 +14,9 @@ class Header extends Component {
     // Build steps for react-typical: [text, ms, text, ms, ...]
     this.titles = rawTitles.map(t => [String(t).toUpperCase(), 1500]).flat();
 
-    const HeaderTitleTypeAnimation = React.memo(
-      () => <Typical className="title-styles" steps={this.titles} loop={50} />,
-      () => true
-    );
+    const HeaderTitleTypeAnimation = React.memo(() => (
+      <Typical className="title-styles" steps={this.titles} loop={50} />
+    ));
 
     return (
       <header
